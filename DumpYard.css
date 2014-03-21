@@ -1,0 +1,143 @@
+
+
+/*custom font for text*/
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+@import url(http://thecodeplayer.com/uploads/fonts/fontawesome/css/font-awesome.min.css);
+
+/*Basic reset*/
+* {margin: 0; padding: 0;}
+
+
+#divContent {
+	background: #004050;
+	width: 200px;
+	height: 90%;
+	overflow: auto;
+	/*margin: 100px auto 0 auto;*/
+	position: fixed;
+        top: 7%;
+        bottom: 0px;
+        right: 0px;
+	color: white;
+	/*Some cool shadow and glow effect*/
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+/*heading styles*/
+#divContent h3 {
+	font-size: 12px;
+	line-height: 20px;
+	padding: 0 10px;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	background: #003040; 
+	background: linear-gradient(#003040, #002535);
+}
+/*heading hover effect*/
+#divContent h3:hover {
+	text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#divContent h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*list items*/
+#divContent li {
+	list-style-type: none;
+}
+/*links*/
+#divContent ul li ul li  {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 27px;
+	display: block;
+	/*padding: 0 15px;*/
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+}
+/*hover effect on links*/
+#divContent ul li ul li:hover {
+	background: #003545;
+	border-left: 2px solid lightgreen;
+}
+/*Lets hide the non active LIs by default*/
+#divContent ul ul {
+	display: none;
+}
+#divContent ul  {
+	position:static;
+}
+#divContent li.active ul {
+	display: block;
+}
+
+.settingDump{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("Images/setting.png");
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    float: right;
+    height:25px;
+    width: 25px;
+  
+}
+.refreshStorage{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("Images/trash.png");
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    float: left;
+    height:28px;
+    width: 25px;
+  
+}
+.restoreIt{
+  background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("Images/restore.png");
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    float: right;
+    height:15px;
+    width: 15px;
+    padding-right: 3px;
+}
+
+.trashIt{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("Images/trash.png");
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    float: right;
+    height: 20px;
+    width: 15px;
+}
+.right-tab {
+        background: transparent url(Images/mouse.png) no-repeat top left;
+        position: fixed;
+        right: 5px;
+        top: 7%;
+        width: 30px;
+		height:40px;
+        margin-top: -2.5em;
+		overflow: hidden;
+        z-index: 999;
+    }

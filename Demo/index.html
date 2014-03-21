@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Dump Yard by Akshya Kumar Dash</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <script src="../../jquery-1.7.1.js"></script>
+    <script src="../../jquery-1.7.1.min.js"></script>
+    <script src="../jquery.dumpYard.js"></script>
+    <link rel="stylesheet" type="text/css" href="../DumpYard.css" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+jQuery('body').setDumpYard();
+            $('div#menu ul li a').click(function () {
+                $('div.content').hide();
+                var showdiv = $(this).attr("showMe");
+                $('div#' + showdiv).show();
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <!-- start header -->
+    <div id="header">
+        <div id="search">
+            <form id="searchform" method="get" action="#">
+                <fieldset>
+                    <input id="s" type="text" name="s" value="" class="text" />
+                    <input id="x" type="submit" value="Search" class="button" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="logo">
+        <h1><a href="#">Dump Yard </a></h1>
+        <h2>by  Akshya</h2>
+    </div>
+    <!-- end header -->
+    <hr />
+    <!-- start page -->
+    <div id="page">
+        <div id="menu">
+            <ul>
+                <li class="current_page_item"><a showme="homeDiv" href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#" showme="demoDiv">Demo</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- start content -->
+
+
+        <div id="homeDiv" class="content">
+            <div class="post">
+                <h1 class="title"><a href="#">About This plug-in</a></h1>
+                <p class="meta"><small>Created by <a href="http://www.linkedin.com/pub/akshya-dash/15/bb0/aa">Akshya Kumar Dash</a></small></p>
+                <div class="entry">
+                    <p><strong>DumpYard JQuery plug-in</strong> is like a recycle bin for web pages, fully written in JQuery and advance JavaScript by  <a href="http://www.linkedin.com/pub/akshya-dash/15/bb0/aa" rel="nofollow">Akshya Kumar Dash</a>. This free plug-in is released under the MIT license, so you're pretty much free... Have fun with it :)</p>
+
+                    <h2>What can it do?</h2>
+                    <p>This will store the values of input DOM elements on the event set by developer.</p>
+                    <ul style="margin-top: 1.5em; line-height: 1.8em; font-size: 1.1em;">
+                        <li>All information is stored at bowser local storage (i.e. HTML LocalStorage)</li>
+                        <li>It Will help the user to retrieve the input data that she/he has used in past</li>
+                        <li>User will not loose information even if she/he closes the browser</li>
+                        <li>It can be a best helper for application tester to track the testing inputs</li>
+                    </ul>
+
+                </div>
+                <p class="links">
+                    <span class="comments">Comments </span>
+            </div>
+        </div>
+
+        <div id="demoDiv" class="content" style="display: none">
+            <table>
+                <tr>
+                    <td>Text box</td>
+                    <td>
+                        <input id="TextBoxOne" type="text"></td>
+                </tr>
+                <tr>
+                    <td>TextArea</td>
+                    <td>
+                        <textarea id="TextAreaOne" rows="10" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Check Box</td>
+                    <td>
+                        <input id="CheckBoxOne" type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Radio Button</td>
+                    <td>
+                        <input id="RadioButtonOne" type="radio"></td>
+                </tr>
+                <tr>
+                    <td>File Upload</td>
+                    <td>
+                        <input id="FileUploadOne" type="file"></td>
+						</tr>
+						<tr><td>DropDown List</td>
+						<td>
+						<Select <select id="DropDownOne">
+<option value="1">Volvo</option>
+  <option value="2">Saab</option>
+  <option value="3">Mercedes</option>
+  <option value="4">Audi</option>
+ </select></td>
+                </tr>
+            </table>
+        </div>
+        <!-- end content -->
+        <!-- start sidebar two -->
+        <div id="sidebar2" class="sidebar">
+            <ul>
+                <li>
+                    <h2>Field that get stored</h2>
+                    <ul>
+                        <li>Text Box</li>
+                        <li>TextArea</li>
+                        <li>Check Box</li>
+                        <li>Radio button</li>
+                        <li>File Upload</li>
+                        <li>Dropdown List</li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- end sidebar two -->
+        <div style="clear: both;">&nbsp;</div>
+    </div>
+
+
+
+    <!-- end page -->
+    <hr />
+
+    <!-- start footer -->
+    <div id="footer">
+        <p>&copy;2014 All Rights Reserved. &nbsp;&bull;&nbsp; Designed by <a href="http://www.linkedin.com/pub/akshya-dash/15/bb0/aa" rel="nofollow">Akshya Kumar Dash</a>.</p>
+    </div>
+    <!-- end footer -->
+</body>
+</html>
